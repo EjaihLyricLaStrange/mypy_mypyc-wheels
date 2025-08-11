@@ -1,5 +1,5 @@
 messages: []
-model: openai/gpt-4o
+model: openai/gpt-5
 testData: []
 evaluators:
   - name: Groundedness
