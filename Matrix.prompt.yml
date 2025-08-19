@@ -6,3 +6,7 @@ evaluators:
     uses: github/groundedness
   - name: Coherence
     uses: github/coherence
+  - name: Similarity
+    uses: github/similarity
+  - name: Fluency
+    uses: github/fluency
