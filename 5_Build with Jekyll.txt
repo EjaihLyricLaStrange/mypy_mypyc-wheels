@@ -1,0 +1,65 @@
+﻿2025-08-29T04:37:33.9417501Z ##[group]Run actions/jekyll-build-pages@v1
+2025-08-29T04:37:33.9417808Z with:
+2025-08-29T04:37:33.9417977Z   source: ./
+2025-08-29T04:37:33.9418152Z   destination: ./_site
+2025-08-29T04:37:33.9418335Z   future: false
+2025-08-29T04:37:33.9418559Z   build_revision: db051816a1e0f9ba558794c7fa9f7532a7a54bc5
+2025-08-29T04:37:33.9418844Z   verbose: true
+2025-08-29T04:37:33.9419147Z   token: ***
+2025-08-29T04:37:33.9419316Z env:
+2025-08-29T04:37:33.9419469Z   GITHUB_PAGES: true
+2025-08-29T04:37:33.9419658Z ##[endgroup]
+2025-08-29T04:37:33.9513062Z ##[command]/usr/bin/docker run --name ghcrioactionsjekyllbuildpagesv1013_ddf039 --label b46a70 --workdir /github/workspace --rm -e "GITHUB_PAGES" -e "INPUT_SOURCE" -e "INPUT_DESTINATION" -e "INPUT_FUTURE" -e "INPUT_BUILD_REVISION" -e "INPUT_VERBOSE" -e "INPUT_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_ID_TOKEN_REQUEST_URL" -e "ACTIONS_ID_TOKEN_REQUEST_TOKEN" -e "ACTIONS_RESULTS_URL" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/attest-build-provenance/attest-build-provenance":"/github/workspace" ghcr.io/actions/jekyll-build-pages:v1.0.13
+2025-08-29T04:37:34.6607905Z [33mConfiguration file: none[0m
+2025-08-29T04:37:34.7724988Z To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+2025-08-29T04:37:36.8552709Z   Logging at level: debug
+2025-08-29T04:37:36.8553212Z       GitHub Pages: github-pages v232
+2025-08-29T04:37:36.8553626Z       GitHub Pages: jekyll v3.10.0
+2025-08-29T04:37:36.8553982Z              Theme: jekyll-theme-primer
+2025-08-29T04:37:36.8554340Z       Theme source: /usr/local/bundle/gems/jekyll-theme-primer-0.6.0
+2025-08-29T04:37:36.8554818Z          Requiring: jekyll-github-metadata
+2025-08-29T04:37:36.8555227Z          Requiring: jekyll-seo-tag
+2025-08-29T04:37:36.8555885Z          Requiring: jekyll-coffeescript
+2025-08-29T04:37:36.8557732Z          Requiring: jekyll-commonmark-ghpages
+2025-08-29T04:37:36.8558190Z          Requiring: jekyll-gist
+2025-08-29T04:37:36.8558576Z          Requiring: jekyll-github-metadata
+2025-08-29T04:37:36.8558995Z          Requiring: jekyll-paginate
+2025-08-29T04:37:36.8559409Z          Requiring: jekyll-relative-links
+2025-08-29T04:37:36.8559860Z          Requiring: jekyll-optional-front-matter
+2025-08-29T04:37:36.8560320Z          Requiring: jekyll-readme-index
+2025-08-29T04:37:36.8561082Z          Requiring: jekyll-default-layout
+2025-08-29T04:37:36.8561510Z          Requiring: jekyll-titles-from-headings
+2025-08-29T04:37:36.8561929Z    GitHub Metadata: Initializing...
+2025-08-29T04:37:36.8562304Z             Source: /github/workspace/./
+2025-08-29T04:37:36.8562748Z        Destination: /github/workspace/./_site
+2025-08-29T04:37:36.8563277Z  Incremental build: disabled. Enable with --incremental
+2025-08-29T04:37:36.8563785Z       Generating... 
+2025-08-29T04:37:36.8568597Z         Generating: JekyllOptionalFrontMatter::Generator finished in 0.000177821 seconds.
+2025-08-29T04:37:36.8569882Z         Generating: JekyllReadmeIndex::Generator finished in 0.001602829 seconds.
+2025-08-29T04:37:36.8570471Z         Generating: Jekyll::Paginate::Pagination finished in 4.308e-06 seconds.
+2025-08-29T04:37:36.8571274Z    GitHub Metadata: Generating for EjaihLyricLaStrange/attest-build-provenance
+2025-08-29T04:37:36.8571925Z    GitHub Metadata: Calling @client.pages("EjaihLyricLaStrange/attest-build-provenance", {})
+2025-08-29T04:37:36.8572465Z         Generating: JekyllRelativeLinks::Generator finished in 0.314002651 seconds.
+2025-08-29T04:37:36.8573054Z         Generating: JekyllDefaultLayout::Generator finished in 0.000146805 seconds.
+2025-08-29T04:37:36.8573527Z          Requiring: kramdown-parser-gfm
+2025-08-29T04:37:36.8574139Z         Generating: JekyllTitlesFromHeadings::Generator finished in 0.008817756 seconds.
+2025-08-29T04:37:36.8574629Z          Rendering: assets/css/style.scss
+2025-08-29T04:37:36.8574883Z   Pre-Render Hooks: assets/css/style.scss
+2025-08-29T04:37:36.8575247Z   Rendering Markup: assets/css/style.scss
+2025-08-29T04:37:36.8575510Z          Rendering: RELEASE.md
+2025-08-29T04:37:36.8575809Z   Pre-Render Hooks: RELEASE.md
+2025-08-29T04:37:36.8576164Z   Rendering Markup: RELEASE.md
+2025-08-29T04:37:36.8576502Z   Rendering Layout: RELEASE.md
+2025-08-29T04:37:36.8576851Z      Layout source: theme
+2025-08-29T04:37:36.8577786Z    GitHub Metadata: Calling @client.repository("EjaihLyricLaStrange/attest-build-provenance", {:accept=>"application/vnd.github.drax-preview+json"})
+2025-08-29T04:37:36.8578829Z          Rendering: README.md
+2025-08-29T04:37:36.8579204Z   Pre-Render Hooks: README.md
+2025-08-29T04:37:36.8579545Z   Rendering Liquid: README.md
+2025-08-29T04:37:36.8579895Z   Rendering Markup: README.md
+2025-08-29T04:37:36.8580252Z   Rendering Layout: README.md
+2025-08-29T04:37:36.8580583Z      Layout source: theme
+2025-08-29T04:37:36.8581333Z            Writing: /github/workspace/_site/assets/css/style.css
+2025-08-29T04:37:36.8581895Z            Writing: /github/workspace/_site/RELEASE.html
+2025-08-29T04:37:36.8582387Z            Writing: /github/workspace/_site/index.html
+2025-08-29T04:37:36.8582839Z                     done in 1.806 seconds.
+2025-08-29T04:37:36.8583375Z  Auto-regeneration: disabled. Use --watch to enable.
