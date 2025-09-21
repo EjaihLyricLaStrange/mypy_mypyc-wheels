@@ -1,0 +1,69 @@
+﻿2025-08-29T04:37:32.6666145Z ##[group]Run actions/checkout@v4
+2025-08-29T04:37:32.6666717Z with:
+2025-08-29T04:37:32.6666973Z   repository: EjaihLyricLaStrange/attest-build-provenance
+2025-08-29T04:37:32.6667413Z   token: ***
+2025-08-29T04:37:32.6667597Z   ssh-strict: true
+2025-08-29T04:37:32.6667779Z   ssh-user: git
+2025-08-29T04:37:32.6667961Z   persist-credentials: true
+2025-08-29T04:37:32.6668174Z   clean: true
+2025-08-29T04:37:32.6668366Z   sparse-checkout-cone-mode: true
+2025-08-29T04:37:32.6668589Z   fetch-depth: 1
+2025-08-29T04:37:32.6668766Z   fetch-tags: false
+2025-08-29T04:37:32.6668953Z   show-progress: true
+2025-08-29T04:37:32.6669154Z   lfs: false
+2025-08-29T04:37:32.6669310Z   submodules: false
+2025-08-29T04:37:32.6669494Z   set-safe-directory: true
+2025-08-29T04:37:32.6669896Z ##[endgroup]
+2025-08-29T04:37:32.7769268Z Syncing repository: EjaihLyricLaStrange/attest-build-provenance
+2025-08-29T04:37:32.7771701Z ##[group]Getting Git version info
+2025-08-29T04:37:32.7772573Z Working directory is '/home/runner/work/attest-build-provenance/attest-build-provenance'
+2025-08-29T04:37:32.7773785Z [command]/usr/bin/git version
+2025-08-29T04:37:32.7800631Z git version 2.51.0
+2025-08-29T04:37:32.7827362Z ##[endgroup]
+2025-08-29T04:37:32.7848984Z Temporarily overriding HOME='/home/runner/work/_temp/6f24c9c0-be60-4f8a-9f1f-6f432fffefc6' before making global git config changes
+2025-08-29T04:37:32.7850388Z Adding repository directory to the temporary git global config as a safe directory
+2025-08-29T04:37:32.7855363Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/attest-build-provenance/attest-build-provenance
+2025-08-29T04:37:32.7889212Z Deleting the contents of '/home/runner/work/attest-build-provenance/attest-build-provenance'
+2025-08-29T04:37:32.7892977Z ##[group]Initializing the repository
+2025-08-29T04:37:32.7897581Z [command]/usr/bin/git init /home/runner/work/attest-build-provenance/attest-build-provenance
+2025-08-29T04:37:32.7977363Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-08-29T04:37:32.7978303Z hint: is subject to change. To configure the initial branch name to use in all
+2025-08-29T04:37:32.7979099Z hint: of your new repositories, which will suppress this warning, call:
+2025-08-29T04:37:32.7979507Z hint:
+2025-08-29T04:37:32.7979951Z hint: 	git config --global init.defaultBranch <name>
+2025-08-29T04:37:32.7980424Z hint:
+2025-08-29T04:37:32.7981032Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-08-29T04:37:32.7981675Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-08-29T04:37:32.7982621Z hint:
+2025-08-29T04:37:32.7982928Z hint: 	git branch -m <name>
+2025-08-29T04:37:32.7983148Z hint:
+2025-08-29T04:37:32.7983454Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-08-29T04:37:32.7984091Z Initialized empty Git repository in /home/runner/work/attest-build-provenance/attest-build-provenance/.git/
+2025-08-29T04:37:32.7991944Z [command]/usr/bin/git remote add origin https://github.com/EjaihLyricLaStrange/attest-build-provenance
+2025-08-29T04:37:32.8023582Z ##[endgroup]
+2025-08-29T04:37:32.8024063Z ##[group]Disabling automatic garbage collection
+2025-08-29T04:37:32.8027935Z [command]/usr/bin/git config --local gc.auto 0
+2025-08-29T04:37:32.8065135Z ##[endgroup]
+2025-08-29T04:37:32.8065679Z ##[group]Setting up auth
+2025-08-29T04:37:32.8066083Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-08-29T04:37:32.8095894Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-08-29T04:37:32.8351679Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-08-29T04:37:32.8379777Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-08-29T04:37:32.8602667Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-08-29T04:37:32.8646019Z ##[endgroup]
+2025-08-29T04:37:32.8646621Z ##[group]Fetching the repository
+2025-08-29T04:37:32.8655404Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +db051816a1e0f9ba558794c7fa9f7532a7a54bc5:refs/remotes/origin/main-origin
+2025-08-29T04:37:33.4622609Z From https://github.com/EjaihLyricLaStrange/attest-build-provenance
+2025-08-29T04:37:33.4623224Z  * [new ref]         db051816a1e0f9ba558794c7fa9f7532a7a54bc5 -> origin/main-origin
+2025-08-29T04:37:33.4650688Z ##[endgroup]
+2025-08-29T04:37:33.4651503Z ##[group]Determining the checkout info
+2025-08-29T04:37:33.4654391Z ##[endgroup]
+2025-08-29T04:37:33.4659460Z [command]/usr/bin/git sparse-checkout disable
+2025-08-29T04:37:33.4697183Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-08-29T04:37:33.4726213Z ##[group]Checking out the ref
+2025-08-29T04:37:33.4730539Z [command]/usr/bin/git checkout --progress --force -B main-origin refs/remotes/origin/main-origin
+2025-08-29T04:37:33.4933453Z Switched to a new branch 'main-origin'
+2025-08-29T04:37:33.4935492Z branch 'main-origin' set up to track 'origin/main-origin'.
+2025-08-29T04:37:33.4941981Z ##[endgroup]
+2025-08-29T04:37:33.4979788Z [command]/usr/bin/git log -1 --format=%H
+2025-08-29T04:37:33.5002269Z db051816a1e0f9ba558794c7fa9f7532a7a54bc5
