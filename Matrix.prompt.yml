@@ -1,0 +1,12 @@
+messages: []
+model: openai/gpt-5
+testData: []
+evaluators:
+  - name: Groundedness
+    uses: github/groundedness
+  - name: Coherence
+    uses: github/coherence
+  - name: Similarity
+    uses: github/similarity
+  - name: Fluency
+    uses: github/fluency
