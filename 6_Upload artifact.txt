@@ -1,0 +1,75 @@
+﻿2025-08-29T04:37:36.9388164Z ##[group]Run actions/upload-pages-artifact@v3
+2025-08-29T04:37:36.9388487Z with:
+2025-08-29T04:37:36.9388661Z   name: github-pages
+2025-08-29T04:37:36.9388855Z   path: _site/
+2025-08-29T04:37:36.9389024Z   retention-days: 1
+2025-08-29T04:37:36.9389194Z env:
+2025-08-29T04:37:36.9389339Z   GITHUB_PAGES: true
+2025-08-29T04:37:36.9389522Z ##[endgroup]
+2025-08-29T04:37:36.9480227Z ##[group]Run echo ::group::Archive artifact
+2025-08-29T04:37:36.9480585Z [36;1mecho ::group::Archive artifact[0m
+2025-08-29T04:37:36.9481069Z [36;1mtar \[0m
+2025-08-29T04:37:36.9481295Z [36;1m  --dereference --hard-dereference \[0m
+2025-08-29T04:37:36.9481586Z [36;1m  --directory "$INPUT_PATH" \[0m
+2025-08-29T04:37:36.9481853Z [36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \[0m
+2025-08-29T04:37:36.9482117Z [36;1m  --exclude=.git \[0m
+2025-08-29T04:37:36.9482327Z [36;1m  --exclude=.github \[0m
+2025-08-29T04:37:36.9482531Z [36;1m  .[0m
+2025-08-29T04:37:36.9482695Z [36;1mecho ::endgroup::[0m
+2025-08-29T04:37:36.9508678Z shell: /usr/bin/sh -e {0}
+2025-08-29T04:37:36.9508956Z env:
+2025-08-29T04:37:36.9509123Z   GITHUB_PAGES: true
+2025-08-29T04:37:36.9509309Z   INPUT_PATH: _site/
+2025-08-29T04:37:36.9509490Z ##[endgroup]
+2025-08-29T04:37:36.9562476Z ##[group]Archive artifact
+2025-08-29T04:37:36.9575408Z ./
+2025-08-29T04:37:36.9575717Z ./tsconfig.json
+2025-08-29T04:37:36.9576054Z ./tsconfig.lint.json
+2025-08-29T04:37:36.9576386Z ./action.yml
+2025-08-29T04:37:36.9576662Z ./README.md
+2025-08-29T04:37:36.9576943Z ./dist/
+2025-08-29T04:37:36.9577180Z ./dist/index.js
+2025-08-29T04:37:36.9601196Z ./dist/606.index.js
+2025-08-29T04:37:36.9601545Z ./dist/licenses.txt
+2025-08-29T04:37:36.9601878Z ./package-lock.json
+2025-08-29T04:37:36.9604848Z ./CODEOWNERS
+2025-08-29T04:37:36.9605141Z ./LICENSE
+2025-08-29T04:37:36.9605402Z ./Matrix.prompt.yml
+2025-08-29T04:37:36.9605698Z ./eslint.config.mjs
+2025-08-29T04:37:36.9605976Z ./jest.setup.js
+2025-08-29T04:37:36.9606253Z ./RELEASE.md
+2025-08-29T04:37:36.9606510Z ./src/
+2025-08-29T04:37:36.9606747Z ./src/index.ts
+2025-08-29T04:37:36.9607024Z ./src/main.ts
+2025-08-29T04:37:36.9607285Z ./predicate/
+2025-08-29T04:37:36.9607565Z ./predicate/action.yml
+2025-08-29T04:37:36.9607860Z ./assets/
+2025-08-29T04:37:36.9608109Z ./assets/css/
+2025-08-29T04:37:36.9608375Z ./assets/css/style.css
+2025-08-29T04:37:36.9608820Z ./RELEASE.html
+2025-08-29T04:37:36.9609091Z ./package.json
+2025-08-29T04:37:36.9609349Z ./index.html
+2025-08-29T04:37:36.9612712Z ##[endgroup]
+2025-08-29T04:37:36.9675220Z ##[group]Run actions/upload-artifact@v4
+2025-08-29T04:37:36.9675469Z with:
+2025-08-29T04:37:36.9675630Z   name: github-pages
+2025-08-29T04:37:36.9675845Z   path: /home/runner/work/_temp/artifact.tar
+2025-08-29T04:37:36.9676088Z   retention-days: 1
+2025-08-29T04:37:36.9676275Z   if-no-files-found: error
+2025-08-29T04:37:36.9676476Z   compression-level: 6
+2025-08-29T04:37:36.9676654Z   overwrite: false
+2025-08-29T04:37:36.9676834Z   include-hidden-files: false
+2025-08-29T04:37:36.9677029Z env:
+2025-08-29T04:37:36.9677181Z   GITHUB_PAGES: true
+2025-08-29T04:37:36.9677363Z ##[endgroup]
+2025-08-29T04:37:37.1838225Z With the provided path, there will be 1 file uploaded
+2025-08-29T04:37:37.1845045Z Artifact name is valid!
+2025-08-29T04:37:37.1847805Z Root directory input is valid!
+2025-08-29T04:37:37.4923611Z Beginning upload of artifact content to blob storage
+2025-08-29T04:37:38.2737367Z Uploaded bytes 846876
+2025-08-29T04:37:38.3632127Z Finished uploading artifact content to blob storage!
+2025-08-29T04:37:38.3636016Z SHA256 digest of uploaded artifact zip is b7f84cc565cc56057204b7b1de778ebe12a38d1d8ba9a6150b1b8531c6d9ef92
+2025-08-29T04:37:38.3637495Z Finalizing artifact upload
+2025-08-29T04:37:38.5132680Z Artifact github-pages.zip successfully finalized. Artifact ID 3880027741
+2025-08-29T04:37:38.5134028Z Artifact github-pages has been successfully uploaded! Final size is 846876 bytes. Artifact ID is 3880027741
+2025-08-29T04:37:38.5142204Z Artifact download URL: https://github.com/EjaihLyricLaStrange/attest-build-provenance/actions/runs/17314779259/artifacts/3880027741

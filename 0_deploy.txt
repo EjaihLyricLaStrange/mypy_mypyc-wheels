@@ -1,0 +1,52 @@
+﻿2025-08-29T04:37:49.0095324Z Current runner version: '2.328.0'
+2025-08-29T04:37:49.0125930Z ##[group]Runner Image Provisioner
+2025-08-29T04:37:49.0127199Z Hosted Compute Agent
+2025-08-29T04:37:49.0128103Z Version: 20250821.380
+2025-08-29T04:37:49.0129000Z Commit: 438d12cb4fe092871db9867344e3bc0bc5319035
+2025-08-29T04:37:49.0130263Z Build Date: 2025-08-21T20:49:43Z
+2025-08-29T04:37:49.0131280Z ##[endgroup]
+2025-08-29T04:37:49.0132444Z ##[group]Operating System
+2025-08-29T04:37:49.0133394Z Ubuntu
+2025-08-29T04:37:49.0134389Z 24.04.3
+2025-08-29T04:37:49.0135130Z LTS
+2025-08-29T04:37:49.0135907Z ##[endgroup]
+2025-08-29T04:37:49.0136833Z ##[group]Runner Image
+2025-08-29T04:37:49.0137799Z Image: ubuntu-24.04
+2025-08-29T04:37:49.0138696Z Version: 20250824.1.0
+2025-08-29T04:37:49.0140509Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250824.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-08-29T04:37:49.0143507Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250824.1
+2025-08-29T04:37:49.0145270Z ##[endgroup]
+2025-08-29T04:37:49.0147065Z ##[group]GITHUB_TOKEN Permissions
+2025-08-29T04:37:49.0150528Z Contents: read
+2025-08-29T04:37:49.0151389Z Metadata: read
+2025-08-29T04:37:49.0152445Z Pages: write
+2025-08-29T04:37:49.0153392Z ##[endgroup]
+2025-08-29T04:37:49.0156627Z Secret source: Actions
+2025-08-29T04:37:49.0157746Z Prepare workflow directory
+2025-08-29T04:37:49.0626351Z Prepare all required actions
+2025-08-29T04:37:49.0684051Z Getting action download info
+2025-08-29T04:37:49.2999629Z Download action repository 'actions/deploy-pages@v4' (SHA:d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e)
+2025-08-29T04:37:49.8276891Z Complete job name: deploy
+2025-08-29T04:37:49.8981267Z ##[group]Run actions/deploy-pages@v4
+2025-08-29T04:37:49.8982302Z with:
+2025-08-29T04:37:49.8982846Z   token: ***
+2025-08-29T04:37:49.8983205Z   timeout: 600000
+2025-08-29T04:37:49.8983580Z   error_count: 10
+2025-08-29T04:37:49.8983978Z   reporting_interval: 5000
+2025-08-29T04:37:49.8984457Z   artifact_name: github-pages
+2025-08-29T04:37:49.8984914Z   preview: false
+2025-08-29T04:37:49.8985512Z ##[endgroup]
+2025-08-29T04:37:50.2779046Z Fetching artifact metadata for "github-pages" in this workflow run
+2025-08-29T04:37:50.3716263Z Found 1 artifact(s)
+2025-08-29T04:37:50.3729735Z Creating Pages deployment with payload:
+2025-08-29T04:37:50.3730744Z {
+2025-08-29T04:37:50.3731418Z 	"artifact_id": 3880027741,
+2025-08-29T04:37:50.3732775Z 	"pages_build_version": "db051816a1e0f9ba558794c7fa9f7532a7a54bc5",
+2025-08-29T04:37:50.3845780Z 	"oidc_token": "***"
+2025-08-29T04:37:50.3846568Z }
+2025-08-29T04:37:50.6366744Z Created deployment for db051816a1e0f9ba558794c7fa9f7532a7a54bc5, ID: db051816a1e0f9ba558794c7fa9f7532a7a54bc5
+2025-08-29T04:37:55.6386955Z Getting Pages deployment status...
+2025-08-29T04:37:55.7585107Z Reported success!
+2025-08-29T04:37:55.7817551Z Evaluate and set environment url
+2025-08-29T04:37:55.7822197Z Evaluated environment url: https://ejaihlyriclastrange.github.io/attest-build-provenance/
+2025-08-29T04:37:55.7823256Z Cleaning up orphan processes
